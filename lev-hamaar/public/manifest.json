@@ -1,0 +1,12 @@
+{
+  "name": "לב המעבר",
+  "short_name": "לב המעבר",
+  "description": "מלווה חכם לבני משפחה המטפלים בהורה מבוגר — בינה מעברית",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#0b3d66",
+  "lang": "he",
+  "dir": "rtl",
+  "icons": []
+}

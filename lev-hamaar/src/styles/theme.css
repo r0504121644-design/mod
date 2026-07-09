@@ -252,6 +252,36 @@ a { color: var(--navy); }
 
 .credit-line { font-size: 0.78rem; color: var(--ink-soft); text-align: center; padding: 14px 0; }
 
+.gold-divider { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+.gold-divider .line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.gold-divider .mark { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+.logo-badge { display: block; border-radius: 50%; box-shadow: 0 6px 20px rgba(11, 61, 102, 0.25); object-fit: cover; }
+
+.auth-hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: radial-gradient(ellipse at 50% 0%, #123a5e 0%, var(--navy-dark) 55%, #051423 100%);
+}
+.auth-card {
+  max-width: 460px; width: 100%;
+  background: var(--white);
+  border-radius: var(--radius-l);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+  padding: 34px 30px 26px;
+  border: 1px solid rgba(201, 151, 63, 0.35);
+}
+.auth-tagline { color: var(--navy-dark); font-weight: 600; }
+
+.card-accent { border-top: 3px solid var(--gold); }
+
+.step-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-light) 100%);
+  color: var(--white); font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+}
+
 .progress-track { background: var(--blue-pale); border-radius: 999px; height: 8px; overflow: hidden; }
 .progress-fill { background: linear-gradient(90deg, var(--gold), var(--navy)); height: 100%; }
 

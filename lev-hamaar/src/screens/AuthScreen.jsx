@@ -3,7 +3,8 @@ import { useApp } from '../context/AppContext';
 import { BRAND, ROLES } from '../lib/constants';
 import { weakHash } from '../lib/auth';
 import { list } from '../lib/store';
-import { Field } from '../components/UI';
+import { Field, GoldDivider } from '../components/UI';
+import logo from '../assets/logo.jpg';
 
 export default function AuthScreen() {
   const { entities, upsert, setSession, notify } = useApp();
@@ -72,13 +73,13 @@ export default function AuthScreen() {
   }
 
   return (
-    <div className="center" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
-      <div className="card" style={{ maxWidth: 440, width: '100%' }}>
+    <div className="auth-hero">
+      <div className="auth-card">
         <div className="center" style={{ marginBottom: 18 }}>
-          <div style={{ fontSize: '2rem' }}>💙</div>
+          <img src={logo} alt={`${BRAND.company} — ${BRAND.app}`} className="logo-badge" style={{ width: 108, height: 108, margin: '0 auto 10px' }} />
           <h1 style={{ marginBottom: 2 }}>{BRAND.app}</h1>
-          <p className="muted">{BRAND.tagline}</p>
-          <p className="small muted">מבית {BRAND.company}</p>
+          <p className="auth-tagline">{BRAND.tagline}</p>
+          <GoldDivider><span style={{ fontSize: '0.7rem', color: 'var(--ink-soft)' }}>{BRAND.company}</span></GoldDivider>
         </div>
 
         <div className="row" style={{ justifyContent: 'center', marginBottom: 18 }}>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { BRAND } from '../lib/constants';
 import { byFamily } from '../lib/store';
+import logo from '../assets/logo.jpg';
 
 export const CORE_SCREENS = [
   { key: 'home', label: 'בית', icon: '🏠' },
@@ -53,9 +54,12 @@ export function Shell({ active, onNavigate, children }) {
     <div className="app-shell">
       <a href="#main-content" className="skip-link">דלג לתוכן</a>
       <nav className="sidebar" aria-label="ניווט ראשי">
-        <div className="sidebar-brand">
-          <div className="app-name">לב המעבר™</div>
-          <div className="company-name">מבית {BRAND.company}</div>
+        <div className="sidebar-brand row" style={{ flexWrap: 'nowrap' }}>
+          <img src={logo} alt={BRAND.company} className="logo-badge" style={{ width: 42, height: 42 }} />
+          <div>
+            <div className="app-name">לב המעבר™</div>
+            <div className="company-name">מבית {BRAND.company}</div>
+          </div>
         </div>
         <NavGroup title="ליבה" items={CORE_SCREENS} />
         {advancedMode && <NavGroup title="מתקדם" items={ADVANCED_SCREENS} />}

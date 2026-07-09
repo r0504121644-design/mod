@@ -131,8 +131,11 @@ export default function OnboardingWizard() {
 
   return (
     <div style={{ maxWidth: 640, margin: '30px auto', padding: '0 16px' }}>
-      <div className="progress-track" style={{ marginBottom: 8 }}>
-        <div className="progress-fill" style={{ width: `${progress}%` }} />
+      <div className="row" style={{ marginBottom: 8 }}>
+        <span className="step-badge">{step + 1}</span>
+        <div className="progress-track" style={{ flex: 1 }}>
+          <div className="progress-fill" style={{ width: `${progress}%` }} />
+        </div>
       </div>
       <p className="small muted" style={{ marginBottom: 20 }}>שלב {step + 1} מתוך {STEPS.length} — {STEPS[step]}</p>
 

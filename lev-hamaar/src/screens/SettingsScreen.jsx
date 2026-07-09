@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { BRAND, ISRAELI_CITIES, CONSENT_STATUS } from '../lib/constants';
 import { byParent, STORAGE_KEY } from '../lib/store';
-import { Field, ConfirmDialog } from '../components/UI';
+import { Field, ConfirmDialog, GoldDivider } from '../components/UI';
+import logo from '../assets/logo.jpg';
 
 export default function SettingsScreen() {
   const { entities, currentFamily, currentParent, membership, upsert, setSession, notify } = useApp();
@@ -99,9 +100,11 @@ export default function SettingsScreen() {
       </div>
 
       <div className="card center">
+        <img src={logo} alt={BRAND.company} className="logo-badge" style={{ width: 84, height: 84, margin: '0 auto 10px' }} />
         <h3>{BRAND.app}</h3>
         <p className="muted">מבית {BRAND.company}</p>
-        <p className="small">{BRAND.tagline}</p>
+        <p className="small auth-tagline">{BRAND.tagline}</p>
+        <GoldDivider />
         <p className="small muted">{BRAND.credit}</p>
       </div>
 

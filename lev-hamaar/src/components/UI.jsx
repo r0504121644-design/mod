@@ -1,6 +1,16 @@
 import React from 'react';
 import { EMERGENCY_MESSAGE } from '../lib/constants';
 
+export function GoldDivider({ children }) {
+  return (
+    <div className="gold-divider">
+      <span className="line" />
+      {children && <span className="mark">{children}</span>}
+      <span className="line" />
+    </div>
+  );
+}
+
 export function EmptyState({ emoji = '🌤️', title, text, actionLabel, onAction }) {
   return (
     <div className="empty-state">

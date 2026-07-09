@@ -8,5 +8,7 @@
   "theme_color": "#0b3d66",
   "lang": "he",
   "dir": "rtl",
-  "icons": []
+  "icons": [
+    { "src": "/logo.jpg", "sizes": "1254x1254", "type": "image/jpeg", "purpose": "any" }
+  ]
 }

@@ -46,7 +46,7 @@ export default function HomeScreen({ navigate }) {
       {topItems.length > 0 ? (
         <div className="grid grid-3">
           {topItems.slice(0, 3).map((it, i) => (
-            <button key={i} className="card" style={{ textAlign: 'right', cursor: 'pointer' }} onClick={it.action}>
+            <button key={i} className="card card-accent" style={{ textAlign: 'right', cursor: 'pointer' }} onClick={it.action}>
               <div style={{ fontSize: '1.6rem' }}>{it.icon}</div>
               <p style={{ marginTop: 8, fontWeight: 600 }}>{it.text}</p>
             </button>

@@ -1,11 +1,11 @@
 {
-  "name": "מסע התעסוקתיות",
-  "short_name": "תעסוקתיות",
-  "description": "מפת פיתוח אישי – 10 כישורים מרכזיים",
+  "name": "יועצת+",
+  "short_name": "יועצת+",
+  "description": "סביבת העבודה החכמה ליועצת החינוכית",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080f1e",
-  "theme_color": "#c9a84c",
+  "background_color": "#f6f4ef",
+  "theme_color": "#14453f",
   "orientation": "portrait",
   "icons": [
     {
